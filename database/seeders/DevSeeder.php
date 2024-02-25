@@ -1,0 +1,26 @@
+<?php namespace Database\Seeders;
+/**
+ * @copyright Copyright (c) 2023 Notsoweb (https://notsoweb.com) - All rights reserved.
+ */
+
+use Illuminate\Database\Seeder;
+
+/**
+ * Base de datos de desarrollo
+ * 
+ * @author Moisés de Jesús Cortés Castellanos <ing.moisesdejesuscortesc@notsoweb.com>
+ * @version 1.0.0
+ */
+class DevSeeder extends Seeder
+{
+    /**
+     * Seed the application's database.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        $this->call(RoleSeeder::class);
+        $this->call(UserSeeder::class);
+    }
+}

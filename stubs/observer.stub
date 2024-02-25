@@ -1,0 +1,90 @@
+<?php namespace {{ namespace }};
+/**
+ * @copyright Copyright (c) 2023 Notsoweb (https://notsoweb.com) - All rights reserved.
+ */
+
+use App\Http\Traits\ReportAction;
+use {{ namespacedModel }};
+
+/**
+ * Observador del modelo {{ model }}
+ * 
+ * @author Moisés de Jesús Cortés Castellanos <ing.moisesdejesuscortesc@notsoweb.com>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\{{ namespacedModel }}>
+ * 
+ * @version 1.0.0
+ */
+class {{ class }}
+{
+    use ReportAction;
+    
+    /**
+     * Objeto del evento
+     */
+    protected $event = '{{ modelVariable }}s';
+
+    /**
+     * Handle the {{ model }} "created" event.
+     *
+     * @param  \{{ namespacedModel }}  ${{ modelVariable }}
+     * @return void
+     */
+    public function created({{ model }} ${{ modelVariable }})
+    {
+        $this->reportCreate($this->event, ${{ modelVariable }}->toArray(), __("{$this->event}.created", [
+            '{{ modelVariable }}' => ${{ modelVariable }}->name
+        ]));
+    }
+
+    /**
+     * Handle the {{ model }} "updated" event.
+     *
+     * @param  \{{ namespacedModel }}  ${{ modelVariable }}
+     * @return void
+     */
+    public function updated({{ model }} ${{ modelVariable }})
+    {
+        $this->reportUpdate($this->event, ${{ modelVariable }}->getContrastChanges(), __("{$this->event}.updated", [
+            '{{ modelVariable }}' => ${{ modelVariable }}->name
+        ]));
+    }
+
+    /**
+     * Handle the {{ model }} "deleted" event.
+     *
+     * @param  \{{ namespacedModel }}  ${{ modelVariable }}
+     * @return void
+     */
+    public function deleted({{ model }} ${{ modelVariable }})
+    {
+        $this->reportDestroy($this->event, ${{ modelVariable }}->toArray(), __("{$this->event}.deleted", [
+            '{{ modelVariable }}' => ${{ modelVariable }}->name
+        ]));
+    }
+
+    /**
+     * Handle the {{ model }} "restored" event.
+     *
+     * @param  \{{ namespacedModel }}  ${{ modelVariable }}
+     * @return void
+     */
+    public function restored({{ model }} ${{ modelVariable }})
+    {
+        $this->reportUpdate($this->event, ${{ modelVariable }}->toArray(), __("{$this->event}.restored", [
+            '{{ modelVariable }}' => ${{ modelVariable }}->name
+        ]));
+    }
+
+    /**
+     * Handle the {{ model }} "force deleted" event.
+     *
+     * @param  \{{ namespacedModel }}  ${{ modelVariable }}
+     * @return void
+     */
+    public function forceDeleted({{ model }} ${{ modelVariable }})
+    {
+        $this->reportDestroy($this->event, ${{ modelVariable }}->toArray(), __("{$this->event}.forceDeleted", [
+            '{{ modelVariable }}' => ${{ modelVariable }}->name
+        ]));
+    }
+}
