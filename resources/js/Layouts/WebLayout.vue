@@ -16,15 +16,14 @@ const menu = ref(false);
                     <div>
                         <img class="h-14" src="/storage/images/logo-white.png" />
                     </div>
-                    <div @click="menu = !menu">
+                    <div @click="menu = !menu" class="block md:hidden">
                         <GoogleIcon name="menu" class="text-white text-2xl" />
                     </div>
                 </div>
             </header>
             <ul 
-                v-show="menu"
                 class="flex flex-col md:flex-row w-full justify-center pt-2 items-center space-x-4 overflow-x-auto overflow-hidden"
-                :class="{'':menu}"
+                :class="{'flex flex-col md:hidden':menu,'hidden md:flex':!menu}"
             >
                 <li class="font-bold uppercase text-sm text-primary hover:underline">
                     <Link :href="route('web.index')">
