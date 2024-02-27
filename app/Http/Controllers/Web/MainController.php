@@ -36,7 +36,7 @@ class MainController extends VueController
      */
     public function about()
     {
-        return $this->vuew('index');
+        return $this->vuew('about');
     }
 
     /**
@@ -50,9 +50,25 @@ class MainController extends VueController
     /**
      * Acerca de nosotros
      */
+    public function faqs()
+    {
+        return $this->vuew('faqs');
+    }
+
+    /**
+     * Acerca de nosotros
+     */
+    public function research()
+    {
+        return $this->vuew('research');
+    }
+
+    /**
+     * Acerca de nosotros
+     */
     public function news()
     {
-        return $this->vuew('index');
+        return $this->vuew('news');
     }
 
     /**

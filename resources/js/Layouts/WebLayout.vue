@@ -1,22 +1,31 @@
 <script setup>
+import { ref } from 'vue'
 import { Link } from '@inertiajs/vue3'
+
+import GoogleIcon      from '@/Components/Shared/GoogleIcon.vue';
+
+const menu = ref(false);
 
 </script>
 
 <template>
     <div class="flex flex-col w-full min-h-screen justify-between bg-white dark:bg-slate-500">
         <div id="main">
-            <header class=" bg-primary">
-                <div class="mx-auto container flex w-full  py-2 justify-between">
+            <header class="px-2  bg-primary">
+                <div class="mx-auto container flex w-full  py-2 justify-between items-center">
                     <div>
                         <img class="h-14" src="/storage/images/logo-white.png" />
                     </div>
-                    <div>
-    
+                    <div @click="menu = !menu">
+                        <GoogleIcon name="menu" class="text-white text-2xl" />
                     </div>
                 </div>
             </header>
-            <ul class="flex justify-center pt-2 items-center space-x-4">
+            <ul 
+                v-show="menu"
+                class="flex flex-col md:flex-row w-full justify-center pt-2 items-center space-x-4 overflow-x-auto overflow-hidden"
+                :class="{'':menu}"
+            >
                 <li class="font-bold uppercase text-sm text-primary hover:underline">
                     <Link :href="route('web.index')">
                         Inicio
@@ -28,8 +37,18 @@ import { Link } from '@inertiajs/vue3'
                     </Link>
                 </li>
                 <li class="font-bold uppercase text-sm text-primary hover:underline">
-                    <Link :href="route('web.products')">
+                    <a target="_blank" href="https://hidrogenix.shop.com">
                         Productos
+                    </a>
+                </li>
+                <li class="font-bold uppercase text-sm text-primary hover:underline">
+                    <Link :href="route('web.research')">
+                        Investigaciones
+                    </Link>
+                </li>
+                <li class="font-bold uppercase text-sm text-primary hover:underline">
+                    <Link :href="route('web.faqs')">
+                        Faqs
                     </Link>
                 </li>
                 <li class="font-bold uppercase text-sm text-primary hover:underline">
@@ -43,7 +62,7 @@ import { Link } from '@inertiajs/vue3'
                     </Link>
                 </li>
             </ul>
-            <main class="space-y-2 px-2">
+            <main class="space-y-2 px-2 pb-4">
                 <slot />
             </main>
         </div>

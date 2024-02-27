@@ -18,6 +18,8 @@ Route::name('web.')->group(function (){
     Route::get('/', [MainController::class, 'index'])->name('index');
     Route::get('/nosotros', [MainController::class, 'about'])->name('about');
     Route::get('/productos', [MainController::class, 'products'])->name('products');
+    Route::get('/faqs', [MainController::class, 'faqs'])->name('faqs');
+    Route::get('/investigaciones', [MainController::class, 'research'])->name('research');
     Route::get('/noticias', [MainController::class, 'news'])->name('news');
     Route::get('/contacto', [MainController::class, 'contact'])->name('contact');
 });

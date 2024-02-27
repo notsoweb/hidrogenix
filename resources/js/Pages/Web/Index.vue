@@ -1,13 +1,14 @@
 <script setup>
 import Feature from '@/Components/Web/Card/Feature.vue';
-import Detail  from '@/Components/Web/Card/Detail.vue';
+import New  from '@/Components/Web/Card/New.vue';
+import Testimonial  from '@/Components/Web/Card/Testimonial.vue';
 import Layout  from '@/Layouts/WebLayout.vue';
 </script>
 
 <template>
     <Layout>
         <div class="mx-auto container"></div>
-        <div class="flex flex-col justify-center items-center text-white w-full h-80 bg-cover" :style="{'background-image':'url(storage/images/moleculas.jpg)'}">
+        <div class="flex flex-col justify-center items-center rounded-md text-white w-full h-80 bg-cover" :style="{'background-image':'url(storage/images/moleculas.jpg)'}">
             <h4 class="font-bold text-3xl">HIDROGENIX</h4>
             <span>Donde la innovación se encuentra con el bienestar.</span>
         </div>
@@ -30,15 +31,26 @@ import Layout  from '@/Layouts/WebLayout.vue';
             <Feature title="Mejora la vista" icon="visibility" outline />
             <Feature title="Mejora cognitiva" icon="psychology" outline />
         </div>
-        <div class="bg-slate-100 p-4 space-y-4">
-            <div class="mx-auto container">
-                <h4 class="font-thin text-center text-3xl text-primary">Nombre la de sección</h4>
+        <div class="mx-auto container grid gap-4 grid-cols-1 md:grid-cols-2">
+            <div>
+                <div class="mx-auto container md:col-span-2 lg:col-span-6">
+                    <h4 class="font-thin  text-3xl text-primary">Noticias y artículos</h4>
+                </div>
+                <div class="w-full space-y-2 overflow-y-auto h-80 md:pr-2 pb-2">
+                    <New />
+                    <New />
+                    <New />
+                </div>
             </div>
-            <div class="mx-auto container grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                <Detail />
-                <Detail />
-                <Detail />
+            <div class="py-4">
+                <iframe 
+                    width="100%"
+                    height="100%" src="https://www.youtube.com/embed/yuxS6hbxf-w" title="USO DE TU MÁQUINA DE HIDRÓGENO MOLECULAR" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
+                ></iframe>
             </div>
+        </div>
+        <div>
+            <Testimonial />
         </div>
     </Layout>
 </template>

@@ -7,7 +7,7 @@ import Layout from '@/Layouts/WebLayout.vue';
 <template>
     <Layout>
         <div class="mx-auto container"></div>
-        <div class="flex flex-col justify-center items-center text-white w-full h-80 bg-cover bg-center"
+        <div class="flex flex-col justify-center items-center rounded-md text-white w-full h-80 bg-cover bg-center"
             :style="{ 'background-image': 'url(storage/images/yoga-1.jpg)' }">
             <h4 class="font-bold text-2xl">CONTACTANOS</h4>
             <span>Es un placer escucharte.</span>
