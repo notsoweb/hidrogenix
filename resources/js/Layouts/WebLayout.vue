@@ -13,9 +13,9 @@ const menu = ref(false);
         <div id="main">
             <header class="px-2  bg-primary">
                 <div class="mx-auto container flex w-full  py-2 justify-between items-center">
-                    <div>
+                    <Link :href="route('web.index')">
                         <img class="h-14" src="/storage/images/logo-white.png" />
-                    </div>
+                    </Link>
                     <div @click="menu = !menu" class="block md:hidden">
                         <GoogleIcon name="menu" class="text-white text-2xl" />
                     </div>
