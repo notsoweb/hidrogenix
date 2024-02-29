@@ -19,7 +19,7 @@ defineProps({
             :name="icon"
             :outline="outline"
         />
-        <h4 class="font-bold text-primary">{{ title }}</h4>
+        <h4 class="font-bold text-primary text-center">{{ title }}</h4>
         <span class="text-xs">{{ description }}</span>
     </div>
 </template>

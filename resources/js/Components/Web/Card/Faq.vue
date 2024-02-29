@@ -13,7 +13,7 @@ const open = async () => {
 </script>
 
 <template>
-    <div class="flex flex-col w-full p-4 h-fit space-y-2 shadow-md transition-all duration-300">
+    <div class="flex flex-col w-full p-4 h-full space-y-2 shadow-md transition-all duration-300">
         <div @click="open" class="flex w-full justify-between">
             <div>
                 <h4  class="font-semibold cursor-pointer">
@@ -31,7 +31,7 @@ const open = async () => {
             </button>
         </div>
         </div>
-        <div v-show="showText" class="h-full overflow-y-auto">
+        <div v-show="showText" class="h-full overflow-y-auto transition-all">
             <p class="">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum natus assumenda omnis adipisci porro tempora similique deleniti autem quaerat quas quos saepe impedit voluptas eaque sint, nesciunt dolore magnam placeat.
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum natus assumenda omnis adipisci porro tempora similique deleniti autem quaerat quas quos saepe impedit voluptas eaque sint, nesciunt dolore magnam placeat.

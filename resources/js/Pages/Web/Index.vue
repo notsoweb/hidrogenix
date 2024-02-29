@@ -1,7 +1,8 @@
 <script setup>
+import { Link } from '@inertiajs/vue3'
+
 import Feature from '@/Components/Web/Card/Feature.vue';
 import New  from '@/Components/Web/Card/New.vue';
-import Testimonial  from '@/Components/Web/Card/Testimonial.vue';
 import Layout  from '@/Layouts/WebLayout.vue';
 </script>
 
@@ -12,6 +13,18 @@ import Layout  from '@/Layouts/WebLayout.vue';
             <h4 class="font-bold text-3xl">HIDROGENIX</h4>
             <span>Donde la innovación se encuentra con el bienestar.</span>
         </div>
+        <div class="mx-auto container py-4 grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+            <Link :href="route('web.research')">
+                <Feature title="Investigación científica" icon="biotech" outline/>
+            </Link>
+            <Link :href="route('web.news')">
+                <Feature title="Artículos y reconocimientos" icon="receipt_long" outline />
+            </Link>
+            <Link :href="route('web.testimonial')">
+                <Feature title="Casos de éxito" icon="volunteer_activism" outline />
+            </Link>
+            <Feature title="Blog" icon="newspaper"  outline />
+        </div>
         <div class="mx-auto container flex flex-col justify-center items-center space-y-4 py-8">
             <h4 class="font-thin text-center text-3xl text-primary">¿Que es el hidrógeno molecular?</h4>
             <p class="font-thin text-center max-w-4xl">
@@ -20,17 +33,7 @@ import Layout  from '@/Layouts/WebLayout.vue';
                 en nuestro cuerpo.
             </p>
         </div>
-        <div class="mx-auto container py-4 grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-6">
-            <div class="mx-auto container md:col-span-2 lg:col-span-6">
-                <h4 class="font-thin text-center text-3xl text-primary">Beneficios</h4>
-            </div>
-            <Feature title="Reduce el estrés" outline />
-            <Feature title="Relaja músculos" icon="sports_gymnastics" outline />
-            <Feature title="Antiedad" icon="volunteer_activism" outline />
-            <Feature title="Regula presión sanguínea" icon="diversity_1" outline />
-            <Feature title="Mejora la vista" icon="visibility" outline />
-            <Feature title="Mejora cognitiva" icon="psychology" outline />
-        </div>
+        
         <div class="mx-auto container grid gap-4 grid-cols-1 md:grid-cols-2">
             <div>
                 <div class="mx-auto container md:col-span-2 lg:col-span-6">
@@ -48,9 +51,6 @@ import Layout  from '@/Layouts/WebLayout.vue';
                     height="100%" src="https://www.youtube.com/embed/yuxS6hbxf-w" title="USO DE TU MÁQUINA DE HIDRÓGENO MOLECULAR" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
                 ></iframe>
             </div>
-        </div>
-        <div>
-            <Testimonial />
         </div>
     </Layout>
 </template>

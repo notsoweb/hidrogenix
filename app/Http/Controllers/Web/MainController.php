@@ -78,4 +78,12 @@ class MainController extends VueController
     {
         return $this->vuew('contact');
     }
+
+    /**
+     * Página contacto
+     */
+    public function testimonial()
+    {
+        return $this->vuew('testimonial');
+    }
 }

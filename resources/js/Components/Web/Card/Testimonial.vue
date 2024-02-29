@@ -12,7 +12,7 @@ const testimonialActive = ref(1)
 			<div class="absolute top-0 left-0 z-10 grid-indigo w-16 h-16 md:w-40 md:h-40 md:ml-20 md:mt-24"></div>
 			
 			<div class="relative text-2xl md:text-5xl py-2 px-6 md:py-6 md:px-1 md:w-64 md:mx-auto text-indigo-100 font-semibold leading-tight tracking-tight mb-0 z-20">
-				<span class="md:block">Testimonios</span>
+				<span class="md:block text-center">Casos de éxito y testimonios</span>
 			</div>
 			<div class="absolute right-0 bottom-0 mr-4 mb-4 hidden md:block">
 				<button 

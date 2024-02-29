@@ -22,6 +22,7 @@ Route::name('web.')->group(function (){
     Route::get('/investigaciones', [MainController::class, 'research'])->name('research');
     Route::get('/noticias', [MainController::class, 'news'])->name('news');
     Route::get('/contacto', [MainController::class, 'contact'])->name('contact');
+    Route::get('/testimonios', [MainController::class, 'testimonial'])->name('testimonial');
 });
 
 /**
