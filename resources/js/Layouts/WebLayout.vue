@@ -66,7 +66,7 @@ const menu = ref(false);
             </main>
         </div>
         <footer class="bg-primary text-white">
-            <div class="mx-auto container flex flex-col md:flex-row justify-between">
+            <div class="mx-auto container flex flex-col items-center md:flex-row justify-between">
                 <span> &copy; 2024 Hidrogenix</span>
                 <span> Desarrollado por <b>NOTSOWEB</b></span>
             </div>
