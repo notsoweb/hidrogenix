@@ -117,6 +117,10 @@ background: #d4d4d4;
   @apply px-4 py-1 text-sm text-center;
 }
 
+.text-style {
+  @apply text-lg font-light antialiased;
+}
+
 .transition-global {
   @apply transition-all duration-300;
 }

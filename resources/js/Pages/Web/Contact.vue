@@ -1,16 +1,18 @@
 <script setup>
-import Feature from '@/Components/Web/Card/Feature.vue';
-import Detail from '@/Components/Web/Card/Detail.vue';
+import Title  from '@/Components/Web/Card/Transparent.vue';
 import Layout from '@/Layouts/WebLayout.vue';
 </script>
 
 <template>
     <Layout>
         <div class="mx-auto container"></div>
-        <div class="flex flex-col justify-center items-center rounded-md text-white w-full h-80 bg-cover bg-center"
-            :style="{ 'background-image': 'url(storage/images/yoga-1.jpg)' }">
-            <h4 class="font-bold text-2xl">CONTACTANOS</h4>
-            <span>Es un placer escucharte.</span>
+        <div
+            class="flex flex-col justify-center items-center rounded-md text-white w-full h-80 bg-cover bg-center"
+            :style="{ 'background-image': 'url(storage/images/yoga-1.jpg)' }"
+        >
+            <Title>
+                <h4 class="font-bold text-2xl">CONTACTANOS</h4>
+            </Title>
         </div>
        
         <div class="space-y-4">
@@ -20,7 +22,7 @@ import Layout from '@/Layouts/WebLayout.vue';
                     <div>
                         <h1 class="text-3xl font-thin">Escribenos</h1>
                         <p class="text-sm mt-3">
-                                Nos encantaría darte más información y contestar cualquier pregunta que tengas sobre el Hidrógeno Molecular
+                            Nos encantaría darte más información y contestar cualquier pregunta que tengas sobre el Hidrógeno Molecular
                             y el <b>AquaCure®</b>.
                         </p>
                         <div class="mt-12">
@@ -36,9 +38,9 @@ import Layout from '@/Layouts/WebLayout.vue';
                                                 data-original="#000000" />
                                         </svg>
                                     </div>
-                                    <a target="blank" href="#" class="text-primary text-sm ml-3">
+                                    <a target="blank" href="mailto:hola@hidrogenix.com" class="text-primary text-sm ml-3">
                                         <small class="block">Mail</small>
-                                        <strong>https://gmail.com</strong>
+                                        <strong>hola@hidrogenix.com</strong>
                                     </a>
                                 </li>
                             </ul>
@@ -47,7 +49,7 @@ import Layout from '@/Layouts/WebLayout.vue';
                             <h2 class="text-lg font-extrabold">Socials</h2>
                             <ul class="flex mt-3 space-x-4">
                                 <li class="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                                    <a href="javascript:void(0)">
+                                    <a href="https://www.facebook.com/profile.php?id=61553334243896">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#007bff'
                                             viewBox="0 0 24 24">
                                             <path
@@ -56,7 +58,7 @@ import Layout from '@/Layouts/WebLayout.vue';
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                                <!-- <li class="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                                     <a href="javascript:void(0)">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#007bff'
                                             viewBox="0 0 511 512">
@@ -65,9 +67,9 @@ import Layout from '@/Layouts/WebLayout.vue';
                                                 data-original="#000000" />
                                         </svg>
                                     </a>
-                                </li>
+                                </li> -->
                                 <li class="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                                    <a href="javascript:void(0)">
+                                    <a target="_blank" href="https://www.instagram.com/hidrogenomolecular.mx/">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#007bff'
                                             viewBox="0 0 24 24">
                                             <path

@@ -42,6 +42,14 @@ class MainController extends VueController
     /**
      * Acerca de nosotros
      */
+    public function hidrogenix()
+    {
+        return $this->vuew('hidrogenix');
+    }
+
+    /**
+     * Acerca de nosotros
+     */
     public function products()
     {
         return $this->vuew('index');

@@ -6,7 +6,7 @@ import Layout  from '@/Layouts/DashboardLayout.vue';
 <template>
     <Layout title="Dashboard">
         <div class="py-4">
-            <Welcome />
+            Bienvenido, <b>{{ $page.props.user.name }}</b>.
         </div>
     </Layout>
 </template>

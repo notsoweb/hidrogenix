@@ -1,6 +1,10 @@
 <script setup>
 import { nextTick, ref } from 'vue'
 
+defineProps({
+    title: String
+})
+
 const showFaq  = ref(false)
 const showText = ref(false)
 
@@ -17,7 +21,7 @@ const open = async () => {
         <div @click="open" class="flex w-full justify-between">
             <div>
                 <h4  class="font-semibold cursor-pointer">
-                    ¿Esta es una pregunta sobre algún tema?
+                    {{ title }}
                 </h4>
             </div>
             <div>
@@ -31,20 +35,8 @@ const open = async () => {
             </button>
         </div>
         </div>
-        <div v-show="showText" class="h-full overflow-y-auto transition-all">
-            <p class="">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum natus assumenda omnis adipisci porro tempora similique deleniti autem quaerat quas quos saepe impedit voluptas eaque sint, nesciunt dolore magnam placeat.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum natus assumenda omnis adipisci porro tempora similique deleniti autem quaerat quas quos saepe impedit voluptas eaque sint, nesciunt dolore magnam placeat.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum natus assumenda omnis adipisci porro tempora similique deleniti autem quaerat quas quos saepe impedit voluptas eaque sint, nesciunt dolore magnam placeat.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum natus assumenda omnis adipisci porro tempora similique deleniti autem quaerat quas quos saepe impedit voluptas eaque sint, nesciunt dolore magnam placeat.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum natus assumenda omnis adipisci porro tempora similique deleniti autem quaerat quas quos saepe impedit voluptas eaque sint, nesciunt dolore magnam placeat.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum natus assumenda omnis adipisci porro tempora similique deleniti autem quaerat quas quos saepe impedit voluptas eaque sint, nesciunt dolore magnam placeat.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum natus assumenda omnis adipisci porro tempora similique deleniti autem quaerat quas quos saepe impedit voluptas eaque sint, nesciunt dolore magnam placeat.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum natus assumenda omnis adipisci porro tempora similique deleniti autem quaerat quas quos saepe impedit voluptas eaque sint, nesciunt dolore magnam placeat.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum natus assumenda omnis adipisci porro tempora similique deleniti autem quaerat quas quos saepe impedit voluptas eaque sint, nesciunt dolore magnam placeat.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum natus assumenda omnis adipisci porro tempora similique deleniti autem quaerat quas quos saepe impedit voluptas eaque sint, nesciunt dolore magnam placeat.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum natus assumenda omnis adipisci porro tempora similique deleniti autem quaerat quas quos saepe impedit voluptas eaque sint, nesciunt dolore magnam placeat.
-            </p>
+        <div v-show="showText" class="h-full space-y-4 overflow-y-auto transition-all">
+            <slot />
         </div>
     </div>
 </template>

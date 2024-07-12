@@ -2,28 +2,31 @@
 import { Link } from '@inertiajs/vue3'
 
 import Feature from '@/Components/Web/Card/Feature.vue';
-import New  from '@/Components/Web/Card/New.vue';
+import New     from '@/Components/Web/Card/New.vue';
+import Title   from '@/Components/Web/Card/Transparent.vue';
 import Layout  from '@/Layouts/WebLayout.vue';
 </script>
 
 <template>
     <Layout>
         <div class="mx-auto container"></div>
-        <div class="flex flex-col justify-center items-center rounded-md text-white w-full h-80 bg-cover" :style="{'background-image':'url(storage/images/moleculas.jpg)'}">
-            <h4 class="font-bold text-3xl">HIDROGENIX</h4>
-            <span>Donde la innovación se encuentra con el bienestar.</span>
+        <div class="flex flex-col justify-center items-center rounded-md text-white w-full h-80 backdrop-brightness-50 bg-cover" :style="{'background-image':'url(storage/images/moleculas.jpg)'}">
+            <Title>
+                <h4 class="font-bold text-3xl text-center">HIDROGENIX</h4>
+                <span class="w-full text-center">Donde la innovación se encuentra con el bienestar</span>
+            </Title>
         </div>
         <div class="mx-auto container py-4 grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-            <Link :href="route('web.research')">
-                <Feature title="Investigación científica" icon="biotech" outline/>
+            <Link :href="route('web.hidrogenix')">
+                <Feature title="Hidrógeno molecular" icon="biotech" outline/>
             </Link>
+            <Feature title="Mi máquina" icon="coffee_maker"  outline />
             <Link :href="route('web.news')">
                 <Feature title="Artículos y reconocimientos" icon="receipt_long" outline />
             </Link>
             <Link :href="route('web.testimonial')">
                 <Feature title="Casos de éxito" icon="volunteer_activism" outline />
             </Link>
-            <Feature title="Blog" icon="newspaper"  outline />
         </div>
         <div class="mx-auto container flex flex-col justify-center items-center space-y-4 py-8">
             <h4 class="font-thin text-center text-3xl text-primary">¿Que es el hidrógeno molecular?</h4>

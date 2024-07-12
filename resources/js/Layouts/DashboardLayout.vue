@@ -52,8 +52,8 @@ onMounted(()=> {
                     />
                     <Link
                         icon="live_help"
-                        name="help.title"
-                        to="dashboard.help"
+                        name="Volver al sitio"
+                        to="web.index"
                     />
                 </Section>
                 <Section name="Configuraciones">
@@ -76,6 +76,7 @@ onMounted(()=> {
                     to="admin.users.index"
                 />
                 <Link
+                    v-if="hasPermission('histories.index')"
                     icon="history"
                     name="changelogs.title"
                     to="dashboard.changelogs"

@@ -1,15 +1,18 @@
 <script setup>
-import Feature from '@/Components/Web/Card/Feature.vue';
-import Detail from '@/Components/Web/Card/Detail.vue';
+import Title  from '@/Components/Web/Card/Transparent.vue';
 import Layout from '@/Layouts/WebLayout.vue';
 </script>
 
 <template>
     <Layout>
         <div class="mx-auto container"></div>
-        <div class="flex flex-col justify-center items-center rounded-md text-white w-full h-80 bg-cover bg-center"
-            :style="{ 'background-image': 'url(storage/images/yoga-1.jpg)' }">
-            <h4 class="font-bold text-2xl">NOSOTROS</h4>
+        <div
+            class="flex flex-col justify-center items-center rounded-md text-white w-full h-80 bg-cover bg-center"
+            :style="{ 'background-image': 'url(storage/images/yoga-1.jpg)' }"
+        >
+            <Title>
+                <h4 class="font-bold text-2xl">NOSOTROS</h4>
+            </Title>
         </div>
        
         <div class="mx-auto container space-y-4 py-4">
@@ -19,7 +22,7 @@ import Layout from '@/Layouts/WebLayout.vue';
                 las máquinas de <i>Hidrógeno Molecular</i>, generadores de hidrógeno molecular reconocidos por sus efectos transformadores sobre el bienestar.
             </p>
             <p>
-                Comprometidos con el avance de la atención médica, nos enorgullecemos de ofrecer no solo <b>máquinas de Hidrógeno Molecular de última generación</b>,
+                Estamos Comprometidos con el avance de la atención médica,orgullosos de ofrecer no solo <b>máquinas de Hidrógeno Molecular de última generación</b>,
                 sino también una amplia gama de consumibles médicos de alta calidad. Nuestra misión se basa en brindar a las personas y a los profesionales de la salud
                 un fácil acceso a los beneficios de la tecnología del hidrógeno molecular.
             </p>
@@ -31,6 +34,26 @@ import Layout from '@/Layouts/WebLayout.vue';
             <p>
                 Descubra el poder del <b>Hidrógeno Molecular con Hidrogenix</b>, su socio de confianza en el viaje hacia una vida más saludable y feliz.
             </p>
-
+        </div>
+        <div class="mx-auto container space-y-4 py-4">
+            <div class="grid gap-4 grid-cols-1 md:grid-cols-2">
+                <div class="p-2 rounded-md border-2">
+                    <h4 class="font-bold">Misión</h4>
+                    <p class="text-justify italic">
+                        "Ser una fuerza líder en el avance de la salud y el bienestar mediante la distribución de equipos novedosos y consumibles médicos de última generación.
+                        Comprometidos con la excelencia y la innovación, esforzándonos por brindar a las personas y a los proveedores de atención médica un fácil acceso a la
+                        tecnología del Hidrógeno Molecular, promoviendo a su vez un enfoque holístico del bienestar. Nuestra misión abarca la dedicación a la calidad, la sostenibilidad
+                        y la satisfacción del cliente, mientras trabajamos por un mundo más saludable y feliz"
+                    </p>
+                </div>
+                <div class="p-2 rounded-md border-2">
+                    <h4 class="font-bold">Visión</h4>
+                    <p class="text-justify italic">
+                        "Construir relaciones duraderas con los usuarios y profesionales de la salud promoviendo la educación sobre los beneficios del hidrógeno molecular y contribuyendo
+                        a la evolución de las prácticas de atención médica preventiva. Cumpliremos nuestro compromiso con excelencia buscando un futuro sostenible, aspirando a ser el
+                        distribuidor de confianza elegido para máquinas hidrógeno molecular y consumibles médicos, desempeñando un papel clave en la configuración de un mañana más saludable."
+                    </p>
+                </div>
+            </div>
         </div>
 </Layout></template>
