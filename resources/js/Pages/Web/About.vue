@@ -15,7 +15,7 @@ import Layout from '@/Layouts/WebLayout.vue';
             </Title>
         </div>
        
-        <div class="mx-auto container space-y-4 py-4">
+        <div class="mx-auto container space-y-4 py-4 text-style">
             <p>
                 Bienvenido a <b>Hidrogenix</b>, donde la innovación se encuentra con el bienestar. Como <b>distribuidor autorizado (Embajadores Afiliados)</b>,
                 nos especializamos en brindar soluciones de vanguardia para <b>mejorar la salud y la vitalidad</b>. En el centro de nuestra oferta se encuentran
@@ -35,7 +35,7 @@ import Layout from '@/Layouts/WebLayout.vue';
                 Descubra el poder del <b>Hidrógeno Molecular con Hidrogenix</b>, su socio de confianza en el viaje hacia una vida más saludable y feliz.
             </p>
         </div>
-        <div class="mx-auto container space-y-4 py-4">
+        <div class="mx-auto container space-y-4 py-4 text-style">
             <div class="grid gap-4 grid-cols-1 md:grid-cols-2">
                 <div class="p-2 rounded-md border-2">
                     <h4 class="font-bold">Misión</h4>
