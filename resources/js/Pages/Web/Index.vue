@@ -36,14 +36,5 @@ import Layout  from '@/Layouts/WebLayout.vue';
                 en nuestro cuerpo.
             </p>
         </div>
-        
-        <div class="mx-auto container flex justify-center">
-            <div class="w-full h-72 max-w-lg">
-                <iframe 
-                    width="100%"
-                    height="100%" src="https://www.youtube.com/embed/yuxS6hbxf-w" title="USO DE TU MÁQUINA DE HIDRÓGENO MOLECULAR" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
-                ></iframe>
-            </div>
-        </div>
     </Layout>
 </template>

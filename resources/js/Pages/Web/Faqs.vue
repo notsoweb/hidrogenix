@@ -56,95 +56,6 @@ import Layout from '@/Layouts/WebLayout.vue';
                     de solución salina rica en H2.
                 </p>
             </Faq>
-            <Faq title="¿Cual es la diferencia entre agua Kangen y agua hidrogenada?">
-                <p class="text-style">
-                    <b>El agua hidrogenada</b> es agua mejorada con hidrógeno molecular. A pesar de su simplicidad, el poder del hidrógeno molecular hace de este tipo de agua una fuerza asombrosa. 
-                </p>
-                <div class="grid gap-2 grid-cols-1 lg:grid-cols-3">
-                    <div class="lg:col-span-3">
-                        <h4 class="p-2 bg-primary text-center text-white">¿Qué es?</h4>
-                    </div>
-                    <div class="border-2">
-                        <h4 class="p-4 bg-primary text-center text-white">Agua hidrogenada</h4>
-                        <p class="p-2 text-style">
-                            Agua hidrogenada o agua rica en hidrógeno simplemente significa agua normal (H2O) que contiene gas hidrógeno disuelto (H2).
-                        </p>
-                    </div>
-                    <div class="border-2">
-                        <h4 class="p-4 bg-primary text-center text-white">Agua Alkalina</h4>
-                        <p class="p-2 text-style">
-                            Agua con un pH alcalino: Agua purificada más minerales alcalinos añadidos artificialmente.
-                        </p>
-                    </div>
-                    <div class="border-2">
-                        <h4 class="p-4 bg-primary text-center text-white">Agua Ionizada</h4>
-                        <p class="p-2 text-style">
-                            Agua que contiene hidrógeno molecular.
-                        </p>
-                    </div>
-                </div>
-                <div class="grid gap-2 grid-cols-1 lg:grid-cols-2">
-                    <div class="lg:col-span-2">
-                        <h4 class="p-2 bg-primary text-center text-white">¿Como se fabrica?</h4>
-                    </div>
-                    <div class="border-2">
-                        <h4 class="p-4 bg-primary text-center text-white">AquaCure (Máquina de hidrógeno molecular)</h4>
-                        <p class="p-2 text-style">
-                            Máquina que produce hidrógeno molecular puro a través de un proceso de electrólisis.
-                        </p>
-                    </div>
-                    <div class="border-2">
-                        <h4 class="p-4 bg-primary text-center text-white">Enagic (Kangen water)</h4>
-                        <p class="p-2 text-style">
-                            Ionizador de agua genera un flujo continuo de 5 tipos versátiles de agua con diferentes pH.
-                        </p>
-                        <ul class="p-2 list-inside list-decimal">
-                            <li><b>Agua Kangen fuerte:</b> NO SE TOMA, se para limpieza.</li>
-                            <li><b>Agua Kangen®:</b> Agua para tomar, contiene hidrógeno molecular más minerales.</li>
-                            <li><b>Agua neutra:</b> PH 7</li>
-                            <li><b>Agua de belleza:</b> PH de 4 a 6</li>
-                            <li><b>Agua ácida fuerte:</b> NO SE TOMA, se usa para limpieza.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="grid gap-2 grid-cols-1 lg:grid-cols-2">
-                    <div class="lg:col-span-2">
-                        <h4 class="p-2 bg-primary text-center text-white">Via de administración</h4>
-                    </div>
-                    <div class="border-2">
-                        <h4 class="p-4 bg-primary text-center text-white">AquaCure (Máquina de hidrógeno molecular)</h4>
-                        <ul class="p-2 list-inside list-decimal">
-                            <li>Inhalación</li>
-                            <li>Oral (Tomando agua hidrogenada) </li>
-                            <li>Tópica</li>
-                        </ul>
-                    </div>
-                    <div class="border-2">
-                        <h4 class="p-4 bg-primary text-center text-white">Enagic (Kangen water)</h4>
-                        <ul class="p-2 list-inside list-decimal">
-                            <li>Inhalación</li>
-                            <li>Tópica</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="grid gap-2 grid-cols-1 lg:grid-cols-2">
-                    <div class="lg:col-span-2">
-                        <h4 class="p-2 bg-primary text-center text-white">Efectos secundarios</h4>
-                    </div>
-                    <div class="border-2">
-                        <h4 class="p-4 bg-primary text-center text-white">AquaCure (Máquina de hidrógeno molecular)</h4>
-                        <p class="p-2 text-style">
-                            Ninguno, por ser 100% natural y conocido para nuestro cuerpo. (Nuestro cuerpo ya produce hidrógeno molecular, aunque en menores concentraciones).
-                        </p>
-                    </div>
-                    <div class="border-2">
-                        <h4 class="p-4 bg-primary text-center text-white">Enagic (Kangen water)</h4>
-                        <p class="p-2 text-style">
-                            
-                        </p>
-                    </div>
-                </div>
-            </Faq>
             <Faq title="Diferencias entre agua alcalina e hidrogenada">
                 <p class="text-style">
                     El agua alcalina es agua con un valor de pH alto, mientras que el agua hidrogenada es agua normal con gas hidrógeno adicional disuelto en ella.
@@ -155,39 +66,6 @@ import Layout from '@/Layouts/WebLayout.vue';
                     No se sabe que ambos causen efectos adversos graves o intolerables. Sin embargo, en comparación con el agua hidrogenada, se dice que la ingesta
                     prolongada o excesiva de agua alcalina artificial afecta la acidez del estómago; como resultado, puede alterar la digestión de los alimentos y
                     provocar malestar estomacal.
-                </p>
-            </Faq>
-            <Faq title="¿Cómo funcionan las máquinas Kangen?">
-                <p class="text-style">
-                    Tanto las máquinas Kangen como las alcalinas funcionan electrolizando agua. En estas máquinas se instalan placas y a través de ellas pasan
-                    corrientes positivas y negativas para crear agua separando iones. Es por eso que el agua producida por máquinas Kangen y alcalinas a veces se
-                    llama agua “ionizada”.
-                </p>
-            </Faq>
-            <Faq title="¿Cuales son los beneficios del agua Kangen?">
-                <p class="text-style">
-                    El agua Kangen y otros tipos de agua alcalina tienen muchos propósitos en cuanto a salud, limpieza y belleza.
-                </p>
-                <p class="text-style">
-                    Los hallazgos de un estudio de 2012 encontraron que el agua alcalina con un pH de 8,8 puede potencialmente disminuir los síntomas del reflujo ácido.
-                     otros beneficios para la salud sugeridos incluyen la disminución de los síntomas en personas con hipertensión, diabetes y colesterol alto.
-                </p>
-            </Faq>
-            <Faq title="¿Cuales son los riesgos del agua Kangen?">
-                <p class="text-style">
-                    El agua Kangen está disponible en formulaciones que son seguras para beber y en fórmulas alcalinas fuertes que no son seguras para beber.
-                </p>
-                <p class="text-style">
-                    El agua alcalina fuerte pretende beneficiar su salud. Una de las formas en que lo hace es eliminando de las frutas y verduras elementos como pesticidas.
-                    Sin embargo, cabe señalar que este tipo de agua alcalina fuerte viene acompañada de cierta pseudociencia.
-                </p>
-                <p class="text-style">
-                    Las empresas suelen comercializar agua alcalina fuerte como lo suficientemente potente como para eliminar los pesticidas de las frutas y verduras
-                    después de remojar estos alimentos en el agua. A menudo se utiliza un cambio en la coloración del agua como prueba de esta fuerte capacidad.
-                </p>
-                <p class="text-style">
-                    Sin embargo, según el Instituto del Hidrógeno Molecular, la razón del cambio en la coloración del agua después de remojar los productos en agua alcalina
-                    fuerte no se debe exclusivamente a los pesticidas. Simplemente es absorber el pigmento de la fruta o verdura.
                 </p>
             </Faq>
         </div>
