@@ -15,45 +15,30 @@ import Layout from '@/Layouts/WebLayout.vue';
             </Title>
         </div>
        
-        <div class="mx-auto container space-y-4 py-4 text-style">
+        <div class="mx-auto container space-y-4 py-4 text-style text-justify">
             <p>
-                Bienvenido a <b>Hidrogenix</b>, donde la innovación se encuentra con el bienestar. Como <b>distribuidor autorizado (Embajadores Afiliados)</b>,
-                nos especializamos en brindar soluciones de vanguardia para <b>mejorar la salud y la vitalidad</b>. En el centro de nuestra oferta se encuentran
-                las máquinas de <i>Hidrógeno Molecular</i>, generadores de hidrógeno molecular reconocidos por sus efectos transformadores sobre el bienestar.
+                Bienvenido a <b>Hidrogenix</b>, donde la innovación se encuentra con el bienestar. Como <b>distribuidor autorizado (Embajadores Afiliados)</b>, nos especializamos en brindar
+                soluciones de vanguardia para mejorar la salud y la vitalidad. En el centro de nuestra oferta se encuentran las máquinas de Hidrógeno Molecular, generadores de
+                hidrógeno molecular reconocidos por sus efectos transformadores sobre el bienestar.
             </p>
             <p>
-                Estamos Comprometidos con el avance de la atención médica,orgullosos de ofrecer no solo <b>máquinas de Hidrógeno Molecular de última generación</b>,
-                sino también una amplia gama de consumibles médicos de alta calidad. Nuestra misión se basa en brindar a las personas y a los profesionales de la salud
-                un fácil acceso a los beneficios de la tecnología del hidrógeno molecular.
+                Comprometidos con el avance de la atención médica, nos enorgullece ofrecer no solo <b>máquinas de Hidrógeno Molecular de última generación</b>, sino también una amplia gama de
+                <b>consumibles médicos de alta calidad</b>. Nuestra misión es proporcionar a las personas y a los profesionales de la salud un acceso fácil a los beneficios de la tecnología del
+                hidrógeno molecular.
+
             </p>
             <p>
-                En <b>Hidrogenix</b> priorizamos la <i>excelencia, la sostenibilidad y la satisfacción</i> del cliente. Nuestro equipo está dedicado a garantizar que
-                nuestros productos cumplan con los más altos estándares, fomentando una cultura de <b>atención médica preventiva</b>. A través de asociaciones estratégicas,
-                innovación continua y pasión por el bienestar, estamos dando forma a un futuro más saludable tanto para las personas como para las comunidades.
+                En <b>Hidrogenix</b> también compartimos información relevante sobre los beneficios, noticias, ensayos clínicos y estudios científicos relacionados con las
+                terapias de hidrógeno molecular, con el fin de informar y difundir los últimos avances de esta terapia natural. Creemos firmemente en su capacidad para
+                complementar tratamientos médicos, prevenir enfermedades y mantener una salud óptima.
             </p>
             <p>
-                Descubra el poder del <b>Hidrógeno Molecular con Hidrogenix</b>, su socio de confianza en el viaje hacia una vida más saludable y feliz.
+                <b>Priorizamos</b> <i></i>la excelencia, la sostenibilidad y la satisfacción del cliente. Nuestro equipo se dedica a garantizar que nuestros productos estén <b>acompañados
+                del mejor servicio y atención al cliente</b>, fomentando una cultura de atención a la salud preventiva. A través de asociaciones estratégicas, innovación continua
+                y pasión por el bienestar, estamos moldeando un futuro más saludable tanto para las personas como para las comunidades.
             </p>
-        </div>
-        <div class="mx-auto container space-y-4 py-4 text-style">
-            <div class="grid gap-4 grid-cols-1 md:grid-cols-2">
-                <div class="p-2 rounded-md border-2">
-                    <h4 class="font-bold">Misión</h4>
-                    <p class="text-justify italic">
-                        "Ser una fuerza líder en el avance de la salud y el bienestar mediante la distribución de equipos novedosos y consumibles médicos de última generación.
-                        Comprometidos con la excelencia y la innovación, esforzándonos por brindar a las personas y a los proveedores de atención médica un fácil acceso a la
-                        tecnología del Hidrógeno Molecular, promoviendo a su vez un enfoque holístico del bienestar. Nuestra misión abarca la dedicación a la calidad, la sostenibilidad
-                        y la satisfacción del cliente, mientras trabajamos por un mundo más saludable y feliz"
-                    </p>
-                </div>
-                <div class="p-2 rounded-md border-2">
-                    <h4 class="font-bold">Visión</h4>
-                    <p class="text-justify italic">
-                        "Construir relaciones duraderas con los usuarios y profesionales de la salud promoviendo la educación sobre los beneficios del hidrógeno molecular y contribuyendo
-                        a la evolución de las prácticas de atención médica preventiva. Cumpliremos nuestro compromiso con excelencia buscando un futuro sostenible, aspirando a ser el
-                        distribuidor de confianza elegido para máquinas hidrógeno molecular y consumibles médicos, desempeñando un papel clave en la configuración de un mañana más saludable."
-                    </p>
-                </div>
-            </div>
+            <p>
+                Descubran el poder del <b>Hidrógeno Molecular con Hidrogenix</b>, su socio de confianza en el viaje hacia una vida más saludable y feliz.
+            </p>
         </div>
 </Layout></template>

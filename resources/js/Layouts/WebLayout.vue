@@ -35,25 +35,14 @@ const menu = ref(false);
                         Nosotros
                     </Link>
                 </li>
-                
                 <li class="font-bold uppercase text-sm text-primary hover:underline">
-                    <Link :href="route('web.hidrogenix')">
-                        Hidrógeno molecular
+                    <Link :href="route('web.products')">
+                        Productos
                     </Link>
                 </li>
                 <li class="font-bold uppercase text-sm text-primary hover:underline">
                     <Link :href="route('web.faqs')">
-                        Preguntas
-                    </Link>
-                </li>
-                <li class="font-bold uppercase text-sm text-primary hover:underline">
-                    <a target="_blank" href="https://hidrogenix.shop.com">
-                        Productos
-                    </a>
-                </li>
-                <li class="font-bold uppercase text-sm text-primary hover:underline">
-                    <Link :href="route('web.contact')">
-                        Contacto
+                        Faq
                     </Link>
                 </li>
                 <template v-if="$page.props.user">
@@ -66,10 +55,15 @@ const menu = ref(false);
                 <template v-else>
                     <li class="font-bold uppercase text-sm text-primary hover:underline">
                         <Link :href="route('login')">
-                            Iniciar sesión
+                            Usuarios
                         </Link>
                     </li>
                 </template>
+                <li class="font-bold uppercase text-sm text-primary hover:underline">
+                    <Link :href="route('web.contact')">
+                        Contacto
+                    </Link>
+                </li>
             </ul>
             <main class="space-y-2 px-2 pb-4">
                 <slot />

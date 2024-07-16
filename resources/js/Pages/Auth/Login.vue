@@ -80,17 +80,6 @@ const submit = () => {
                     :disabled="form.processing"
                     v-text="$t('auth.login')"
                 />
-                <Link
-                    class="w-full"
-                    :href="route('register')" 
-                >
-                    <PrimaryButton
-                        class="w-full"
-                        :class="{ 'opacity-25': form.processing }" 
-                        :disabled="form.processing"
-                        v-text="$t('register.signUp')"
-                    />
-                </Link>
                 <Link v-if="canResetPassword"
                     class="underline text-sm" 
                     :href="route('password.request')" 

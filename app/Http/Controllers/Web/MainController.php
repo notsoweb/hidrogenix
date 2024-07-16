@@ -52,7 +52,23 @@ class MainController extends VueController
      */
     public function products()
     {
-        return $this->vuew('index');
+        return $this->vuew('products.index');
+    }
+
+    /**
+     * Acerca de nosotros
+     */
+    public function productAquacure()
+    {
+        return $this->vuew('products.aquacure');
+    }
+
+    /**
+     * Acerca de nosotros
+     */
+    public function productCanula()
+    {
+        return $this->vuew('products.canula');
     }
 
     /**

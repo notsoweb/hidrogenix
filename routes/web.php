@@ -18,6 +18,8 @@ Route::name('web.')->group(function (){
     Route::get('/', [MainController::class, 'index'])->name('index');
     Route::get('/nosotros', [MainController::class, 'about'])->name('about');
     Route::get('/productos', [MainController::class, 'products'])->name('products');
+    Route::get('/productos/aquacure', [MainController::class, 'productAquacure'])->name('products.aquacure');
+    Route::get('/productos/canula', [MainController::class, 'productCanula'])->name('products.canula');
     Route::get('/hidrogeno-molecular', [MainController::class, 'hidrogenix'])->name('hidrogenix');
     Route::get('/faqs', [MainController::class, 'faqs'])->name('faqs');
     Route::get('/investigaciones', [MainController::class, 'research'])->name('research');
